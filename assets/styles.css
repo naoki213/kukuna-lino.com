@@ -161,3 +161,48 @@ h1, h2, h3, p { margin-top: 0; }
   .footer-nav { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal { opacity: 1; transform: none; transition: none; } .btn { transition: none; } }
+
+/* Restrained corporate editorial styling */
+:root { --navy:#0b2c55; --navy-deep:#071e3a; --ink:#182536; --muted:#596878; --line:#d7dde3; --mist:#f5f6f7; --shadow:none; --radius:4px; }
+body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic",Meiryo,sans-serif; line-height:1.95; letter-spacing:.025em; }
+h1,h2,h3,.intro-message,.footer-brand { font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Hiragino Mincho Pro","Noto Serif JP",serif; font-weight:600; }
+.site-header { background:rgba(255,255,255,.98); backdrop-filter:none; }
+.nav a { font-weight:600; letter-spacing:.08em; }
+.nav .contact-link { border-radius:2px; padding:10px 17px; }
+.hero { background:#f7f8f8; }
+.hero::before { display:none; }
+.hero-media { inset:0 0 0 45%; }
+.hero-media::after { background:linear-gradient(90deg,#f7f8f8 0%,rgba(247,248,248,.88) 18%,rgba(247,248,248,.12) 62%); }
+.hero-media img,.service-visual img { filter:saturate(.72) contrast(.96); }
+.hero h1 { font-size:clamp(38px,5vw,64px); letter-spacing:.07em; line-height:1.48; }
+.hero h1 em { color:var(--navy); }
+.eyebrow { color:#687480; font-size:11px; letter-spacing:.22em; }
+.eyebrow::before { width:26px; height:1px; background:#798592; }
+.btn { min-height:50px; border-radius:2px; background:var(--navy); font-weight:600; box-shadow:none; }
+.btn:hover { transform:none; box-shadow:none; background:#123d71; }
+.section { padding:104px 0; }
+.section.soft { background:#f5f6f7; }
+.section-title h2 { letter-spacing:.06em; line-height:1.55; }
+.service-grid { gap:1px; background:var(--line); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.service-card { border:0; border-radius:0; box-shadow:none; padding:42px 34px 38px; }
+.service-card::before { height:2px; }
+.service-card .icon { display:none; }
+.service-card h3 { margin-top:28px; letter-spacing:.04em; }
+.statement { grid-template-columns:1fr; min-height:auto; border-radius:0; box-shadow:none; }
+.statement-copy { padding:70px; max-width:860px; }
+.statement-art { display:none; }
+.table-wrap { border-radius:0; }
+.mail-cta { border-radius:0; background:var(--navy-deep); box-shadow:none; }
+.mail-cta .mail-icon,.contact-panel .mail-icon { border-radius:2px; }
+.page-hero { padding:96px 0 76px; background:#f5f6f7; border-bottom:1px solid var(--line); }
+.page-hero::after { display:none; }
+.page-hero h1 { letter-spacing:.08em; }
+.value-item { border-radius:0; box-shadow:none; }
+.service-visual { border-radius:0; box-shadow:none; }
+.service-detail:hover .service-visual img { transform:none; }
+.note-box { border-radius:0; background:#f2f5ef; }
+.contact-panel { border-radius:0; box-shadow:none; }
+.contact-panel .mail-icon { background:var(--navy); }
+.reveal { opacity:1; transform:none; transition:none; }
+@media (max-width:900px) { .hero-media{inset:0;opacity:.28}.hero-media::after{background:rgba(247,248,248,.66)}.nav{border-radius:0;box-shadow:none} }
+@media (max-width:620px) { .statement-copy{padding:44px 28px}.hero h1{font-size:38px} }
