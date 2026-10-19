@@ -211,7 +211,8 @@ h1,h2,h3,.intro-message,.footer-brand { font-family:"Yu Mincho","YuMincho","Hira
 @media (max-width:900px) {
   .hero { min-height:calc(100svh - 74px); }
   .hero-media { opacity:1; }
-  .hero-media img { object-position:25% center; filter:saturate(.86) contrast(.97); }
+  .hero-media picture { overflow:hidden; }
+  .hero-media img { width:120%; max-width:none; object-position:30% center; filter:saturate(.86) contrast(.97); }
   .hero-media::after { background:linear-gradient(90deg,rgba(247,248,248,.92) 0%,rgba(247,248,248,.78) 45%,rgba(247,248,248,0) 78%),linear-gradient(180deg,rgba(247,248,248,.5) 0%,rgba(247,248,248,0) 30%); }
   .hero-content { width:76%; padding:60px 0 210px; }
   .hero h1 { font-size:34px; line-height:1.5; }
