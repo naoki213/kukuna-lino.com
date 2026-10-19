@@ -221,3 +221,9 @@ h1,h2,h3,.intro-message,.footer-brand { font-family:"Yu Mincho","YuMincho","Hira
   .hero .btns { flex-direction:column; align-items:flex-start; gap:10px; }
   .hero .btn { min-height:44px; padding:0 19px; }
 }
+.home .site-header { position:fixed; left:0; right:0; background:transparent; border-bottom-color:transparent; transition:background .3s ease,border-color .3s ease; }
+.home .site-header.scrolled { background:rgba(255,255,255,.98); border-bottom-color:var(--line); }
+.home .menu-btn { background:rgba(255,255,255,.72); border-color:rgba(255,255,255,.9); }
+.home .hero { min-height:100vh; min-height:100svh; }
+.home .hero-content { padding-top:186px; }
+@media (max-width:900px) { .home .hero-content { padding-top:134px; } }

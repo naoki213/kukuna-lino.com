@@ -27,4 +27,11 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: .15 });
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+const header = document.querySelector('.home .site-header');
+if (header) {
+  const update = () => header.classList.toggle('scrolled', scrollY > 10 || nav?.classList.contains('open'));
+  addEventListener('scroll', update, { passive: true });
+  menu?.addEventListener('click', update);
+  update();
+}
 document.querySelectorAll('[data-year]').forEach((el) => el.textContent = new Date().getFullYear());
