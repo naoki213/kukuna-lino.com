@@ -249,4 +249,4 @@ h1,h2,h3,.intro-message,.footer-brand { font-family:"Yu Mincho","YuMincho","Hira
   .company-brief { display:grid; grid-template-columns:1fr 2fr; gap:56px; align-items:start; }
   .company-brief .section-title { margin-bottom:0; }
 }
-@media (max-width:900px) { .brand img { width:144px; height:45px; } }
+@media (max-width:900px) { .brand img { width:122px; height:38px; } }
