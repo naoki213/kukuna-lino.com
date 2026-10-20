@@ -227,3 +227,26 @@ h1,h2,h3,.intro-message,.footer-brand { font-family:"Yu Mincho","YuMincho","Hira
 .home .hero { min-height:100vh; min-height:100svh; }
 .home .hero-content { padding-top:186px; }
 @media (max-width:900px) { .home .hero-content { padding-top:134px; } }
+.statement { background:transparent; }
+.statement-copy { padding:0; color:var(--ink); }
+.statement-copy .eyebrow { color:#687480; }
+.statement-copy h2 { color:var(--navy-deep); }
+.statement-copy p { color:var(--muted); }
+.mail-cta { color:var(--navy-deep); background:white; border:1px solid var(--line); }
+.mail-cta .mail-icon { color:white; background:var(--navy); }
+.mail-cta small { color:var(--muted); }
+.mail-cta .arrow { color:var(--navy); }
+.text-link { color:var(--navy); font-size:14px; font-weight:600; letter-spacing:.06em; text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:2px; }
+.company-brief .section-title { margin-bottom:36px; }
+.brand img { width:176px; height:55px; }
+@media (min-width:901px) {
+  .hero h1 { font-size:clamp(40px,3.6vw,52px); }
+  .section-title h2,.statement-copy h2 { font-size:34px; }
+  .intro-message { font-size:clamp(26px,2.4vw,32px); }
+  .page-hero h1 { font-size:40px; }
+  .service-detail h2,.contact-panel h2 { font-size:26px; }
+  .mail-cta strong { font-size:20px; }
+  .company-brief { display:grid; grid-template-columns:1fr 2fr; gap:56px; align-items:start; }
+  .company-brief .section-title { margin-bottom:0; }
+}
+@media (max-width:900px) { .brand img { width:144px; height:45px; } }
