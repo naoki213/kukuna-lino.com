@@ -258,3 +258,4 @@ h1,h2,h3,.intro-message,.footer-brand { font-family:"Yu Mincho","YuMincho","Hira
 .mail-btn svg { width:20px; height:20px; flex:none; }
 .mail-btn:hover { color:var(--navy); background:transparent; }
 .contact-panel p { margin-bottom:32px; }
+.company-section { border-top:1px solid var(--line); }
